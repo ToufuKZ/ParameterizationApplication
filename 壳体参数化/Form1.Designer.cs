@@ -41,22 +41,23 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.openMaterialPropertyFileDialogBTN = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.openMaterialPropertyFileDialogBTN = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -195,6 +196,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "文件属性";
             // 
+            // openMaterialPropertyFileDialogBTN
+            // 
+            this.openMaterialPropertyFileDialogBTN.Location = new System.Drawing.Point(160, 55);
+            this.openMaterialPropertyFileDialogBTN.Name = "openMaterialPropertyFileDialogBTN";
+            this.openMaterialPropertyFileDialogBTN.Size = new System.Drawing.Size(35, 20);
+            this.openMaterialPropertyFileDialogBTN.TabIndex = 5;
+            this.openMaterialPropertyFileDialogBTN.Tag = "";
+            this.openMaterialPropertyFileDialogBTN.Text = "...";
+            this.openMaterialPropertyFileDialogBTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.openMaterialPropertyFileDialogBTN, "浏览并选择自定义的材质数据库");
+            this.openMaterialPropertyFileDialogBTN.UseVisualStyleBackColor = true;
+            this.openMaterialPropertyFileDialogBTN.Click += new System.EventHandler(this.openMaterialPropertyFileDialogBTN_Click);
+            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -251,54 +265,17 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "预定义参数";
             // 
-            // label6
+            // radioButton5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "门宽";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(41, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(40, 21);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "596";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(147, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "顶板宽";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(194, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(40, 21);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "258";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // openMaterialPropertyFileDialogBTN
-            // 
-            this.openMaterialPropertyFileDialogBTN.Location = new System.Drawing.Point(160, 55);
-            this.openMaterialPropertyFileDialogBTN.Name = "openMaterialPropertyFileDialogBTN";
-            this.openMaterialPropertyFileDialogBTN.Size = new System.Drawing.Size(35, 20);
-            this.openMaterialPropertyFileDialogBTN.TabIndex = 5;
-            this.openMaterialPropertyFileDialogBTN.Tag = "";
-            this.openMaterialPropertyFileDialogBTN.Text = "...";
-            this.openMaterialPropertyFileDialogBTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.openMaterialPropertyFileDialogBTN, "浏览并选择自定义的材质数据库");
-            this.openMaterialPropertyFileDialogBTN.UseVisualStyleBackColor = true;
-            this.openMaterialPropertyFileDialogBTN.Click += new System.EventHandler(this.openMaterialPropertyFileDialogBTN_Click);
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Checked = true;
+            this.radioButton5.Location = new System.Drawing.Point(59, 61);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(47, 16);
+            this.radioButton5.TabIndex = 5;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "双门";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
@@ -311,17 +288,41 @@
             this.radioButton4.Text = "单门";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // textBox3
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Checked = true;
-            this.radioButton5.Location = new System.Drawing.Point(59, 61);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(47, 16);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "双门";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.textBox3.Location = new System.Drawing.Point(194, 24);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(40, 21);
+            this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "258";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(147, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "顶板宽";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(41, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(40, 21);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "596";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "门宽";
             // 
             // progressBar1
             // 
@@ -353,11 +354,21 @@
             this.textBox4.TabIndex = 0;
             this.textBox4.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(281, 139);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 61);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 403);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox4);
@@ -411,6 +422,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button1;
     }
 }
 
